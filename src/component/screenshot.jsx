@@ -28,11 +28,11 @@ function ScreenshotsCarousel() {
 
   return (
     <Row>
-      <Col lg={8} className="mx-auto">
-        <div className="carousel-inner-custom d-flex justify-content-center align-items-center gap-3">
-          <img src={screenshotImages[prevIndex]} className="side-image" alt="Left" />
+      <Col xs={12} lg={10} xl={8} className="mx-auto">
+        <div className="carousel-inner-custom d-flex justify-content-center align-items-center gap-2 gap-md-3 px-2">
+          <img src={screenshotImages[prevIndex]} className="side-image d-none d-md-block" alt="Left" />
           <img src={screenshotImages[currentIndex]} className="active-image" alt="Center" />
-          <img src={screenshotImages[nextIndex]} className="side-image" alt="Right" />
+          <img src={screenshotImages[nextIndex]} className="side-image d-none d-md-block" alt="Right" />
         </div>
       </Col>
     </Row>

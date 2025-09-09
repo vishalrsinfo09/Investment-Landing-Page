@@ -21,14 +21,14 @@ function MyNavbar() {
                 {/* Brand Section */}
                 <Navbar.Brand
                     href="#"
-                    className="fw-bold fs-3 fs-md-2 text-dark brand-glow d-flex align-items-center"
+                    className="fw-bold fs-4 fs-md-3 fs-lg-2 text-dark brand-glow d-flex align-items-center"
                 >
                     <img
                         src="/Icon.png"
                         alt="App Icon"
                         className="me-2 navbar-logo"
                         style={{
-                            height: "40px",
+                            height: "35px",
                             width: "auto",
                             maxHeight: "50px"
                         }}
@@ -40,7 +40,7 @@ function MyNavbar() {
                     aria-controls="responsive-navbar-nav"
                     onClick={() => setExpanded(!expanded)}
                     className="border-0 shadow-none"
-                    style={{ fontSize: '1.2rem' }}
+                    style={{ fontSize: '1rem' }}
                 />
 
                 {/* Collapsible Navigation */}
@@ -48,35 +48,35 @@ function MyNavbar() {
                     <Nav className="ms-auto align-items-lg-center">
                         <Nav.Link
                             href="#about"
-                            className="text-dark nav-link-custom px-3 py-2"
+                            className="text-dark nav-link-custom px-2 px-md-3 py-2"
                             onClick={handleNavClick}
                         >
                             About
                         </Nav.Link>
                         <Nav.Link
                             href="#features"
-                            className="text-dark nav-link-custom px-3 py-2"
+                            className="text-dark nav-link-custom px-2 px-md-3 py-2"
                             onClick={handleNavClick}
                         >
                             Features
                         </Nav.Link>
                         <Nav.Link
                             href="#screenshots"
-                            className="text-dark nav-link-custom px-3 py-2"
+                            className="text-dark nav-link-custom px-2 px-md-3 py-2"
                             onClick={handleNavClick}
                         >
                             Screenshots
                         </Nav.Link>
 
                         {/* Download Button */}
-                        <div className="mt-2 mt-lg-0 ms-lg-3">
+                        <div className="mt-2 mt-lg-0 ms-lg-2 ms-xl-3">
                             <Button
                                 variant="primary"
                                 className="btn-glow d-flex align-items-center justify-content-center fw-bold w-100 w-lg-auto"
                                 onClick={handleNavClick}
                                 size="sm"
                             >
-                                <Download size={16} className="me-2" />
+                                <Download size={14} className="me-1 me-md-2" />
                                 Download
                             </Button>
                         </div>
