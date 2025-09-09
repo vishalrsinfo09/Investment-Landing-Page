@@ -945,6 +945,10 @@ body {
     gap: 0.5rem;
   } */
 
+  .active-image {
+    min-height: 350px;
+  }
+
   .hero-heading h2 {
     font-size: 1.1rem;
   }

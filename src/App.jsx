@@ -460,11 +460,11 @@ function App() {
                 </a>
               </small>
             </Col>
-            <Col md={4} className="text-center text-md-end">
+            {/* <Col md={4} className="text-center text-md-end">
               <small className="text-light opacity-50">
                 Made with ❤️ for smart investors
               </small>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </footer>
