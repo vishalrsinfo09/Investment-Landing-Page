@@ -1,4 +1,5 @@
 import React from 'react'
+import React from 'react'
 import {
   Container,
   Row,
@@ -84,30 +85,41 @@ function App() {
           <Row className="align-items-center min-vh-90 g-4">
             <Col lg={6} className="text-center text-lg-start">
               <Badge bg="success" className="mb-2 mb-md-3 px-2 px-md-3 py-1 py-md-2 fs-6 fs-md-5 badge-pulse">
+          <Row className="align-items-center min-vh-90 g-4">
+            <Col lg={6} className="text-center text-lg-start">
+              <Badge bg="success" className="mb-2 mb-md-3 px-2 px-md-3 py-1 py-md-2 fs-6 fs-md-5 badge-pulse">
                 {/* <Star className="me-1" size={16} /> */}
                 #1 Investment App 2025
               </Badge>
 
               <h1 className="display-4 display-md-3 fw-bold text-white mb-2 mb-md-3 hero-title">
+              <h1 className="display-4 display-md-3 fw-bold text-white mb-2 mb-md-3 hero-title">
                 Invest Smarter with
                 <span className="text-gradient"> MNYMKT</span>
               </h1>
               <p className="lead text-light mb-2 mb-md-3 hero-subtitle">
+              <p className="lead text-light mb-2 mb-md-3 hero-subtitle">
                 🚀 Your gateway to intelligent investing
               </p>
+              <p className="fs-6 fs-md-5 text-light opacity-90 mb-3 mb-md-4">
               <p className="fs-6 fs-md-5 text-light opacity-90 mb-3 mb-md-4">
                 Transform your financial future with our AI-powered investment
                 platform. Track portfolios, analyze markets, and make informed
                 decisions with professional-grade tools designed for everyone.
               </p>
               <div className="d-flex flex-column flex-sm-row gap-2 gap-md-3 mb-3 mb-md-4">
+              <div className="d-flex flex-column flex-sm-row gap-2 gap-md-3 mb-3 mb-md-4">
                 <Button
                   variant="light"
                   size="md"
                   className="px-3 px-md-5 py-2 py-md-3 fw-bold btn-hero-primary d-flex align-items-center justify-content-center"
+                  size="md"
+                  className="px-3 px-md-5 py-2 py-md-3 fw-bold btn-hero-primary d-flex align-items-center justify-content-center"
                 >
                   <Download className="me-1 me-md-2" size={16} />
+                  <Download className="me-1 me-md-2" size={16} />
                   Download for Android
+                  <ArrowRight className="ms-1 ms-md-2" size={14} />
                   <ArrowRight className="ms-1 ms-md-2" size={14} />
                 </Button>
 
@@ -128,9 +140,17 @@ function App() {
                 <span className="me-2 me-md-4 small">No hidden fees</span>
                 <CheckCircle className="text-success me-1 me-md-2" size={16} />
                 <span className="small">Bank-level security</span>
+              <div className="d-none d-sm-flex flex-wrap align-items-center justify-content-center justify-content-lg-start text-light">
+                <CheckCircle className="text-success me-1 me-md-2" size={16} />
+                <span className="me-2 me-md-4 small">Free to download</span>
+                <CheckCircle className="text-success me-1 me-md-2" size={16} />
+                <span className="me-2 me-md-4 small">No hidden fees</span>
+                <CheckCircle className="text-success me-1 me-md-2" size={16} />
+                <span className="small">Bank-level security</span>
               </div>
 
             </Col>
+            <Col lg={6} className="text-center mt-4 mt-lg-0">
             <Col lg={6} className="text-center mt-4 mt-lg-0">
               <div className="hero-image-container">
                 <img
@@ -142,6 +162,7 @@ function App() {
                   <div className="floating-card floating-card-1">
                     <div className="d-flex align-items-center">
                       <TrendingUp className="text-success me-1 me-md-2" size={18} />
+                      <TrendingUp className="text-success me-1 me-md-2" size={18} />
                       <div>
                         <div className="fw-bold text-success small">+24.5%</div>
                         <small className="text-muted" style={{ fontSize: '0.7rem' }}>Portfolio Growth</small>
@@ -150,6 +171,7 @@ function App() {
                   </div>
                   <div className="floating-card floating-card-2">
                     <div className="d-flex align-items-center">
+                      <Award className="text-warning me-1 me-md-2" size={18} />
                       <Award className="text-warning me-1 me-md-2" size={18} />
                       <div>
                         <div className="fw-bold small">500K+</div>
@@ -165,28 +187,28 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-5 about-section">
+      <section id="about" className="py-4 py-md-5 about-section">
         <Container>
-          <Row className="align-items-center">
-            <Col lg={6} className="mb-4 mb-lg-0">
+          <Row className="align-items-center g-4">
+            <Col lg={6} className="mb-3 mb-lg-0 text-center text-lg-start">
               <Badge
                 bg="info"
-                className="mb-3 px-3 py-2 d-inline-flex align-items-center"
+                className="mb-2 mb-md-3 px-2 px-md-3 py-1 py-md-2 d-inline-flex align-items-center"
               >
-                <Globe className="me-1" size={16} />
+                <Globe className="me-1" size={14} />
                 About MNYMKT
               </Badge>
 
               <h2 className="display-5 fw-bold mb-4 section-title">
                 Built for Modern Investors  
               </h2>
-              <p className="fs-5 text-dark mb-4">
+              <p className="fs-6 fs-md-5 text-dark mb-3 mb-md-4">
                 MNYMKT combines cutting-edge technology with intuitive design
                 to make investing accessible to everyone. Whether you're a
                 seasoned trader or just starting your investment journey, our
                 platform provides the tools and insights you need to succeed.
               </p>
-              <p className="text-muted mb-4">
+              <p className="text-muted mb-3 mb-md-4">
                 Join over{" "}
                 <strong className="text-primary">500,000 users</strong> who
                 trust MNYMKT to manage their portfolios and achieve their
@@ -194,27 +216,27 @@ function App() {
                 recommendations, and bank-level security, your investments are
                 in good hands.
               </p>
-              <div className="d-flex align-items-center mb-4">
-                <div className="me-4">
-                  <div className="h4 fw-bold text-primary mb-0">4.9★</div>
+              <div className="d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center mb-3 mb-md-4 gap-3 gap-md-4">
+                <div className="text-center">
+                  <div className="h5 h4-md fw-bold text-primary mb-0">4.9★</div>
                   <small className="text-muted">App Store Rating</small>
                 </div>
-                <div className="me-4">
-                  <div className="h4 fw-bold text-success mb-0">$2.5B+</div>
+                <div className="text-center">
+                  <div className="h5 h4-md fw-bold text-success mb-0">$2.5B+</div>
                   <small className="text-muted">Assets Managed</small>
                 </div>
-                <div>
-                  <div className="h4 fw-bold text-info mb-0">150+</div>
+                <div className="text-center">
+                  <div className="h5 h4-md fw-bold text-info mb-0">150+</div>
                   <small className="text-muted">Countries</small>
                 </div>
               </div>
               <Button
                 variant="primary"
-                size="lg"
-                className="fw-semibold btn-cta d-flex align-items-center justify-content-center"
+                size="md"
+                className="fw-semibold btn-cta d-flex align-items-center justify-content-center w-100 w-sm-auto"
               >
                 Start Investing Today
-                <ArrowRight className="ms-2" size={16} />
+                <ArrowRight className="ms-1 ms-md-2" size={14} />
               </Button>
 
             </Col>
@@ -233,8 +255,12 @@ function App() {
 
       {/* Features Section */}
       <section id="features" className="py-4 py-md-5 features-section">
+      <section id="features" className="py-4 py-md-5 features-section">
         <Container>
           <Row>
+            <Col lg={8} className="mx-auto text-center mb-4 mb-md-5">
+              <Badge bg="primary" className="mb-2 mb-md-3 px-2 px-md-3 py-1 py-md-2 d-inline-flex align-items-center">
+                <Zap className="me-1" size={14} />
             <Col lg={8} className="mx-auto text-center mb-4 mb-md-5">
               <Badge bg="primary" className="mb-2 mb-md-3 px-2 px-md-3 py-1 py-md-2 d-inline-flex align-items-center">
                 <Zap className="me-1" size={14} />
@@ -242,8 +268,10 @@ function App() {
               </Badge>
 
               <h2 className="display-6 display-md-5 fw-bold mb-2 mb-md-3 section-title">
+              <h2 className="display-6 display-md-5 fw-bold mb-2 mb-md-3 section-title">
                 Powerful Features for Smart Investing
               </h2>
+              <p className="lead text-muted mb-3 mb-md-4">
               <p className="lead text-muted mb-3 mb-md-4">
                 Everything you need to take control of your financial future,
                 all in one app
@@ -251,21 +279,28 @@ function App() {
             </Col>
           </Row>
           <Row className="g-3 g-md-4">
+          <Row className="g-3 g-md-4">
             {features.map((feature, index) => (
+              <Col key={index} sm={6} lg={4}>
               <Col key={index} sm={6} lg={4}>
                 <Card
                   className={`h-100 feature-card feature-card-${feature.color} border-0`}
                 >
                   <Card.Body className="text-center p-3 p-md-4 position-relative">
+                  <Card.Body className="text-center p-3 p-md-4 position-relative">
                     <div
                       className={`feature-icon-bg bg-${feature.color} bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3`}
                       style={{ width: "60px", height: "60px" }}
+                      style={{ width: "60px", height: "60px" }}
                     >
+                      {React.cloneElement(feature.icon, { size: 30 })}
                       {React.cloneElement(feature.icon, { size: 30 })}
                     </div>
                     <Card.Title className="h6 h5-md fw-bold mb-2 mb-md-3">
+                    <Card.Title className="h6 h5-md fw-bold mb-2 mb-md-3">
                       {feature.title}
                     </Card.Title>
+                    <Card.Text className="text-muted small">
                     <Card.Text className="text-muted small">
                       {feature.description}
                     </Card.Text>
@@ -280,20 +315,26 @@ function App() {
 
       {/* Screenshots Section */}
       <section id="screenshots" className="py-4 py-md-5 my-3 my-md-5 screenshots-section">
+      <section id="screenshots" className="py-4 py-md-5 my-3 my-md-5 screenshots-section">
         <Container>
           <Row>
+            <Col lg={8} className="mx-auto text-center mb-4 mb-md-5">
             <Col lg={8} className="mx-auto text-center mb-4 mb-md-5">
               <Badge
                 bg="warning"
                 className="mb-2 mb-md-3 px-2 px-md-3 py-1 py-md-2 d-inline-flex align-items-center"
+                className="mb-2 mb-md-3 px-2 px-md-3 py-1 py-md-2 d-inline-flex align-items-center"
               >
+                <Smartphone className="me-1" size={14} />
                 <Smartphone className="me-1" size={14} />
                 Screenshots
               </Badge>
 
               <h2 className="display-6 display-md-5 fw-bold mb-2 mb-md-3 text-white hero-title">
+              <h2 className="display-6 display-md-5 fw-bold mb-2 mb-md-3 text-white hero-title">
                 See MNYMKT in Action
               </h2>
+              <p className="lead fw-bold text-muted mb-0">
               <p className="lead fw-bold text-muted mb-0">
                 Explore the intuitive interface designed for both beginners and
                 professionals
@@ -307,20 +348,20 @@ function App() {
       </section>
 
       {/* Download Section */}
-      <section className="py-5 download-section text-white">
+      <section className="py-4 py-md-5 download-section text-white">
         <Container>
           <Row>
-            <Col lg={8} className="mx-auto text-center">
+            <Col lg={8} className="mx-auto text-center px-3">
 
               {/* ICON + HEADING ek saath */}
-              <div className="d-flex align-items-center justify-content-center mb-4 flex-nowrap text-center hero-heading">
-                <Download className="me-2 text-white hero-title" size={28} />
-                <h2 className="fw-bold m-0 hero-title">
+              <div className="d-flex align-items-center justify-content-center mb-3 mb-md-4 flex-nowrap text-center hero-heading">
+                <Download className="me-1 me-md-2 text-white hero-title" size={24} />
+                <h2 className="fw-bold m-0 hero-title fs-4 fs-md-2">
                   Ready to Start Investing?
                 </h2>
               </div>
 
-              <p className="lead mb-5 opacity-90">
+              <p className="lead mb-4 mb-md-5 opacity-90">
                 Download MNYMKT today and take the first step towards
                 financial freedom
               </p>
@@ -337,22 +378,22 @@ function App() {
                 </Button>
               </div>
 
-              <div className="mt-5">
-                <div className="d-flex justify-content-center align-items-center flex-wrap gap-4">
+              <div className="mt-4 mt-md-5">
+                <div className="d-flex justify-content-center align-items-center flex-wrap gap-2 gap-md-4">
                   <div className="d-flex align-items-center">
-                    <CheckCircle className="text-success me-2" size={20} />
-                    <span>Available on Android</span>
+                    <CheckCircle className="text-success me-1 me-md-2" size={16} />
+                    <span className="small">Available on Android</span>
                   </div>
                   <div className="d-flex align-items-center">
-                    <Star className="text-warning me-2" size={20} />
-                    <span>4.9★ Rating</span>
+                    <Star className="text-warning me-1 me-md-2" size={16} />
+                    <span className="small">4.9★ Rating</span>
                   </div>
                   <div className="d-flex align-items-center">
-                    <Users className="text-info me-2" size={20} />
-                    <span>500K+ Downloads</span>
+                    <Users className="text-info me-1 me-md-2" size={16} />
+                    <span className="small">500K+ Downloads</span>
                   </div>
                 </div>
-                <small className="text-white-50 d-block mt-3">
+                <small className="text-white-50 d-block mt-2 mt-md-3">
                   iOS version coming soon • Free to download • No subscription
                   required
                 </small>
@@ -364,16 +405,23 @@ function App() {
 
       {/* Footer */}
       <footer className="footer-section text-white py-4 py-md-5">
+      <footer className="footer-section text-white py-4 py-md-5">
         <Container>
+          <Row className="g-4">
+            <Col md={6} lg={3} className="mb-3 mb-lg-0">
           <Row className="g-4">
             <Col md={6} lg={3} className="mb-3 mb-lg-0">
               <div className="d-flex align-items-center">
                 <TrendingUp
                   className="me-1 me-md-2 text-primary brand-icon"
                   size={28}
+                  className="me-1 me-md-2 text-primary brand-icon"
+                  size={28}
                 />
                 <span className="fw-bold fs-5 fs-md-4">MNYMKT</span>
+                <span className="fw-bold fs-5 fs-md-4">MNYMKT</span>
               </div>
+              <p className="text-light opacity-75 mt-2 mt-md-3 mb-0 small">
               <p className="text-light opacity-75 mt-2 mt-md-3 mb-0 small">
                 The future of intelligent investing is here. Join millions of
                 users worldwide.
@@ -382,9 +430,12 @@ function App() {
 
             <Col md={6} lg={3} className="mb-3 mb-lg-0">
               <h6 className="fw-bold mb-2 mb-md-3">Quick Links</h6>
+            <Col md={6} lg={3} className="mb-3 mb-lg-0">
+              <h6 className="fw-bold mb-2 mb-md-3">Quick Links</h6>
               <div className="d-flex flex-column">
                 <a
                   href="#features"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                   className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Features
@@ -392,11 +443,13 @@ function App() {
                 <a
                   href="#about"
                   className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   About
                 </a>
                 <a
                   href="#screenshots"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                   className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Screenshots
@@ -406,9 +459,12 @@ function App() {
 
             <Col md={6} lg={3} className="mb-3 mb-lg-0">
               <h6 className="fw-bold mb-2 mb-md-3">Legal</h6>
+            <Col md={6} lg={3} className="mb-3 mb-lg-0">
+              <h6 className="fw-bold mb-2 mb-md-3">Legal</h6>
               <div className="d-flex flex-column">
                 <a
                   href="/terms-and-conditions"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                   className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Terms & Conditions
@@ -416,17 +472,20 @@ function App() {
                 <a
                   href="/privacy-policy"
                   className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Privacy Policy
                 </a>
                 <a
                   href="/risk-disclosure"
                   className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Risk Disclosure
                 </a>
                 <a
                   href="/refund-policy"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                   className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Refund Policy
@@ -437,19 +496,27 @@ function App() {
             <Col md={6} lg={3}>
               <h6 className="fw-bold mb-2 mb-md-3">Contact</h6>
               <p className="text-light opacity-75 mb-1 mb-md-2 small">
+            <Col md={6} lg={3}>
+              <h6 className="fw-bold mb-2 mb-md-3">Contact</h6>
+              <p className="text-light opacity-75 mb-1 mb-md-2 small">
                 support@MNYMKT.com
               </p>
+              <p className="text-light opacity-75 mb-1 mb-md-2 small">+91-XXXXX-XXXXX</p>
+              <p className="text-light opacity-75 mb-0 small">Available 24/7</p>
               <p className="text-light opacity-75 mb-1 mb-md-2 small">+91-XXXXX-XXXXX</p>
               <p className="text-light opacity-75 mb-0 small">Available 24/7</p>
             </Col>
           </Row>
 
           <hr className="my-3 my-md-4 opacity-25" />
+          <hr className="my-3 my-md-4 opacity-25" />
 
           <Row className="align-items-center">
             <Col md={8} className="text-center text-md-start mb-2 mb-md-0">
+            <Col md={8} className="text-center text-md-start mb-2 mb-md-0">
               <small className="text-light opacity-50">
                 © 2025 MNYMKT. All rights reserved. |
+                <a href="/terms-and-conditions" className="text-light opacity-75 text-decoration-none mx-1">
                 <a href="/terms-and-conditions" className="text-light opacity-75 text-decoration-none mx-1">
                   Terms & Conditions
                 </a> |
@@ -458,6 +525,7 @@ function App() {
                 </a>
               </small>
             </Col>
+            <Col md={4} className="text-center text-md-end">
             <Col md={4} className="text-center text-md-end">
               <small className="text-light opacity-50">
                 Made with ❤️ for smart investors
