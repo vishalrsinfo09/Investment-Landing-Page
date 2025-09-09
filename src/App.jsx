@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   Container,
   Row,
@@ -78,36 +79,36 @@ function App() {
       <MyNavbar />
 
       {/* Hero Section */}
-      <section className="hero-section py-5" style={{ marginTop: "76px" }}>
+      <section className="hero-section py-3 py-md-5" style={{ marginTop: "60px" }}>
         <Container>
-          <Row className="align-items-center min-vh-90">
-            <Col lg={6}>
-              <Badge bg="success" className="mb-3 px-3 py-2 fs-6 badge-pulse">
+          <Row className="align-items-center min-vh-90 g-4">
+            <Col lg={6} className="text-center text-lg-start">
+              <Badge bg="success" className="mb-2 mb-md-3 px-2 px-md-3 py-1 py-md-2 fs-6 fs-md-5 badge-pulse">
                 {/* <Star className="me-1" size={16} /> */}
                 #1 Investment App 2025
               </Badge>
 
-              <h1 className="display-3 fw-bold text-white mb-3 hero-title">
+              <h1 className="display-4 display-md-3 fw-bold text-white mb-2 mb-md-3 hero-title">
                 Invest Smarter with
                 <span className="text-gradient"> MNYMKT</span>
               </h1>
-              <p className="lead text-light mb-3 hero-subtitle">
+              <p className="lead text-light mb-2 mb-md-3 hero-subtitle">
                 🚀 Your gateway to intelligent investing
               </p>
-              <p className="fs-5 text-light opacity-90 mb-4">
+              <p className="fs-6 fs-md-5 text-light opacity-90 mb-3 mb-md-4">
                 Transform your financial future with our AI-powered investment
                 platform. Track portfolios, analyze markets, and make informed
                 decisions with professional-grade tools designed for everyone.
               </p>
-              <div className="d-flex flex-column flex-sm-row gap-3 mb-4">
+              <div className="d-flex flex-column flex-sm-row gap-2 gap-md-3 mb-3 mb-md-4">
                 <Button
                   variant="light"
-                  size="lg"
-                  className="px-5 py-3 fw-bold btn-hero-primary d-flex align-items-center justify-content-center"
+                  size="md"
+                  className="px-3 px-md-5 py-2 py-md-3 fw-bold btn-hero-primary d-flex align-items-center justify-content-center"
                 >
-                  <Download className="me-2" size={20} />
+                  <Download className="me-1 me-md-2" size={16} />
                   Download for Android
-                  <ArrowRight className="ms-2" size={16} />
+                  <ArrowRight className="ms-1 ms-md-2" size={14} />
                 </Button>
 
                 {/* <Button
@@ -120,17 +121,17 @@ function App() {
                 </Button> */}
 
               </div>
-              <div className="d-none d-md-flex align-items-center text-light">
-                <CheckCircle className="text-success me-2" size={18} />
-                <span className="me-4">Free to download</span>
-                <CheckCircle className="text-success me-2" size={18} />
-                <span className="me-4">No hidden fees</span>
-                <CheckCircle className="text-success me-2" size={18} />
-                <span>Bank-level security</span>
+              <div className="d-none d-sm-flex flex-wrap align-items-center justify-content-center justify-content-lg-start text-light">
+                <CheckCircle className="text-success me-1 me-md-2" size={16} />
+                <span className="me-2 me-md-4 small">Free to download</span>
+                <CheckCircle className="text-success me-1 me-md-2" size={16} />
+                <span className="me-2 me-md-4 small">No hidden fees</span>
+                <CheckCircle className="text-success me-1 me-md-2" size={16} />
+                <span className="small">Bank-level security</span>
               </div>
 
             </Col>
-            <Col lg={6} className="text-center mt-5 mt-lg-0">
+            <Col lg={6} className="text-center mt-4 mt-lg-0">
               <div className="hero-image-container">
                 <img
                   src="https://images.pexels.com/photos/7567486/pexels-photo-7567486.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -140,19 +141,19 @@ function App() {
                 <div className="floating-wrapper">
                   <div className="floating-card floating-card-1">
                     <div className="d-flex align-items-center">
-                      <TrendingUp className="text-success me-2" size={20} />
+                      <TrendingUp className="text-success me-1 me-md-2" size={18} />
                       <div>
-                        <div className="fw-bold text-success">+24.5%</div>
-                        <small className="text-muted">Portfolio Growth</small>
+                        <div className="fw-bold text-success small">+24.5%</div>
+                        <small className="text-muted" style={{ fontSize: '0.7rem' }}>Portfolio Growth</small>
                       </div>
                     </div>
                   </div>
                   <div className="floating-card floating-card-2">
                     <div className="d-flex align-items-center">
-                      <Award className="text-warning me-2" size={20} />
+                      <Award className="text-warning me-1 me-md-2" size={18} />
                       <div>
-                        <div className="fw-bold">500K+</div>
-                        <small className="text-muted">Active Users</small>
+                        <div className="fw-bold small">500K+</div>
+                        <small className="text-muted" style={{ fontSize: '0.7rem' }}>Active Users</small>
                       </div>
                     </div>
                   </div>
@@ -177,7 +178,7 @@ function App() {
               </Badge>
 
               <h2 className="display-5 fw-bold mb-4 section-title">
-                Built for Modern Investors
+                Built for Modern Investors  
               </h2>
               <p className="fs-5 text-dark mb-4">
                 MNYMKT combines cutting-edge technology with intuitive design
@@ -231,41 +232,41 @@ function App() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-1 features-section">
+      <section id="features" className="py-4 py-md-5 features-section">
         <Container>
           <Row>
-            <Col lg={8} className="mx-auto text-center mb-5">
-              <Badge bg="primary" className="mb-3 px-3 py-2 d-inline-flex align-items-center">
-                <Zap className="me-1" size={16} />
+            <Col lg={8} className="mx-auto text-center mb-4 mb-md-5">
+              <Badge bg="primary" className="mb-2 mb-md-3 px-2 px-md-3 py-1 py-md-2 d-inline-flex align-items-center">
+                <Zap className="me-1" size={14} />
                 Features
               </Badge>
 
-              <h2 className="display-5 fw-bold mb-3 section-title">
+              <h2 className="display-6 display-md-5 fw-bold mb-2 mb-md-3 section-title">
                 Powerful Features for Smart Investing
               </h2>
-              <p className="lead text-muted mb-4">
+              <p className="lead text-muted mb-3 mb-md-4">
                 Everything you need to take control of your financial future,
                 all in one app
               </p>
             </Col>
           </Row>
-          <Row className="g-4">
+          <Row className="g-3 g-md-4">
             {features.map((feature, index) => (
-              <Col key={index} md={6} lg={4}>
+              <Col key={index} sm={6} lg={4}>
                 <Card
                   className={`h-100 feature-card feature-card-${feature.color} border-0`}
                 >
-                  <Card.Body className="text-center p-4 position-relative">
+                  <Card.Body className="text-center p-3 p-md-4 position-relative">
                     <div
                       className={`feature-icon-bg bg-${feature.color} bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3`}
-                      style={{ width: "80px", height: "80px" }}
+                      style={{ width: "60px", height: "60px" }}
                     >
-                      {feature.icon}
+                      {React.cloneElement(feature.icon, { size: 30 })}
                     </div>
-                    <Card.Title className="h5 fw-bold mb-3">
+                    <Card.Title className="h6 h5-md fw-bold mb-2 mb-md-3">
                       {feature.title}
                     </Card.Title>
-                    <Card.Text className="text-muted">
+                    <Card.Text className="text-muted small">
                       {feature.description}
                     </Card.Text>
                     <div className={`feature-glow bg-${feature.color}`}></div>
@@ -278,22 +279,22 @@ function App() {
       </section>
 
       {/* Screenshots Section */}
-      <section id="screenshots" className="py-5 my-5 screenshots-section">
+      <section id="screenshots" className="py-4 py-md-5 my-3 my-md-5 screenshots-section">
         <Container>
           <Row>
-            <Col lg={8} className="mx-auto text-center mb-5">
+            <Col lg={8} className="mx-auto text-center mb-4 mb-md-5">
               <Badge
                 bg="warning"
-                className="mb-3 px-3 py-2 d-inline-flex align-items-center"
+                className="mb-2 mb-md-3 px-2 px-md-3 py-1 py-md-2 d-inline-flex align-items-center"
               >
-                <Smartphone className="me-1" size={16} />
+                <Smartphone className="me-1" size={14} />
                 Screenshots
               </Badge>
 
-              <h2 className="display-5 fw-bold mb-3 text-white hero-title">
+              <h2 className="display-6 display-md-5 fw-bold mb-2 mb-md-3 text-white hero-title">
                 See MNYMKT in Action
               </h2>
-              <p className="lead fw-bold text-muted">
+              <p className="lead fw-bold text-muted mb-0">
                 Explore the intuitive interface designed for both beginners and
                 professionals
               </p>
@@ -328,11 +329,11 @@ function App() {
                 <Button
                   variant="light"
                   size="lg"
-                  className="px-5 py-4 fw-bold text-primary me-3 mb-3 btn-download-main d-inline-flex align-items-center"
+                  className="fw-bold text-primary me-3 mb-3 btn-download-main d-inline-flex align-items-center"
                 >
-                  <Download className="me-2" size={20} />
+                  {/* <Download className="me-2" size={20} /> */}
                   Download for Android
-                  <ArrowRight className="ms-2" size={20} />
+                  {/* <ArrowRight className="ms-2" size={20} /> */}
                 </Button>
               </div>
 
@@ -362,94 +363,94 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="footer-section text-white py-5">
+      <footer className="footer-section text-white py-4 py-md-5">
         <Container>
-          <Row>
-            <Col lg={3} className="mb-4 mb-lg-0">
+          <Row className="g-4">
+            <Col md={6} lg={3} className="mb-3 mb-lg-0">
               <div className="d-flex align-items-center">
                 <TrendingUp
-                  className="me-2 text-primary brand-icon"
-                  size={32}
+                  className="me-1 me-md-2 text-primary brand-icon"
+                  size={28}
                 />
-                <span className="fw-bold fs-4">MNYMKT</span>
+                <span className="fw-bold fs-5 fs-md-4">MNYMKT</span>
               </div>
-              <p className="text-light opacity-75 mt-3 mb-0">
+              <p className="text-light opacity-75 mt-2 mt-md-3 mb-0 small">
                 The future of intelligent investing is here. Join millions of
                 users worldwide.
               </p>
             </Col>
 
-            <Col lg={3} className="mb-4 mb-lg-0">
-              <h6 className="fw-bold mb-3">Quick Links</h6>
+            <Col md={6} lg={3} className="mb-3 mb-lg-0">
+              <h6 className="fw-bold mb-2 mb-md-3">Quick Links</h6>
               <div className="d-flex flex-column">
                 <a
                   href="#features"
-                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Features
                 </a>
                 <a
                   href="#about"
-                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   About
                 </a>
                 <a
                   href="#screenshots"
-                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Screenshots
                 </a>
               </div>
             </Col>
 
-            <Col lg={3} className="mb-4 mb-lg-0">
-              <h6 className="fw-bold mb-3">Legal</h6>
+            <Col md={6} lg={3} className="mb-3 mb-lg-0">
+              <h6 className="fw-bold mb-2 mb-md-3">Legal</h6>
               <div className="d-flex flex-column">
                 <a
                   href="/terms-and-conditions"
-                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Terms & Conditions
                 </a>
                 <a
                   href="/privacy-policy"
-                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Privacy Policy
                 </a>
                 <a
                   href="/risk-disclosure"
-                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Risk Disclosure
                 </a>
                 <a
                   href="/refund-policy"
-                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                  className="text-light opacity-75 text-decoration-none mb-1 mb-md-2 footer-link small"
                 >
                   Refund Policy
                 </a>
               </div>
             </Col>
 
-            <Col lg={3}>
-              <h6 className="fw-bold mb-3">Contact</h6>
-              <p className="text-light opacity-75 mb-2">
+            <Col md={6} lg={3}>
+              <h6 className="fw-bold mb-2 mb-md-3">Contact</h6>
+              <p className="text-light opacity-75 mb-1 mb-md-2 small">
                 support@MNYMKT.com
               </p>
-              <p className="text-light opacity-75 mb-2">+91-XXXXX-XXXXX</p>
-              <p className="text-light opacity-75 mb-0">Available 24/7</p>
+              <p className="text-light opacity-75 mb-1 mb-md-2 small">+91-XXXXX-XXXXX</p>
+              <p className="text-light opacity-75 mb-0 small">Available 24/7</p>
             </Col>
           </Row>
 
-          <hr className="my-4 opacity-25" />
+          <hr className="my-3 my-md-4 opacity-25" />
 
           <Row className="align-items-center">
-            <Col md={8}>
+            <Col md={8} className="text-center text-md-start mb-2 mb-md-0">
               <small className="text-light opacity-50">
                 © 2025 MNYMKT. All rights reserved. |
-                <a href="/terms-and-conditions" className="text-light opacity-75 text-decoration-none ms-1 me-1">
+                <a href="/terms-and-conditions" className="text-light opacity-75 text-decoration-none mx-1">
                   Terms & Conditions
                 </a> |
                 <a href="/privacy-policy" className="text-light opacity-75 text-decoration-none ms-1">
@@ -457,7 +458,7 @@ function App() {
                 </a>
               </small>
             </Col>
-            <Col md={4} className="text-md-end mt-3 mt-md-0">
+            <Col md={4} className="text-center text-md-end">
               <small className="text-light opacity-50">
                 Made with ❤️ for smart investors
               </small>
