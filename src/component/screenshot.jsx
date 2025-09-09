@@ -31,7 +31,7 @@ function ScreenshotsCarousel() {
       <Col xs={12} lg={10} xl={8} className="mx-auto">
         <div className="carousel-inner-custom d-flex justify-content-center align-items-center gap-2 gap-md-3 px-5">
           <img src={screenshotImages[prevIndex]} className="side-image d-none d-md-block" alt="Left" />
-          <img src={screenshotImages[currentIndex]} className="active-image" alt="Center" />
+          <img src={screenshotImages[currentIndex]} className="active-image mx-auto" alt="Center" />
           <img src={screenshotImages[nextIndex]} className="side-image d-none d-md-block" alt="Right" />
         </div>
       </Col>

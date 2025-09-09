@@ -892,7 +892,7 @@ body {
 @media (min-width: 768px) {
   .carousel-inner-custom img {
     max-height: 400px;
-    width: auto;
+    /* width: auto; */
   }
 }
 
@@ -947,6 +947,9 @@ body {
 
   .active-image {
     min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-heading h2 {
@@ -1094,3 +1097,4 @@ body {
     margin-bottom: 1.5rem !important;
   }
 }
+

@@ -302,9 +302,9 @@ function App() {
               </p>
             </Col>
           </Row>
-          <Row>
+          
             <ScreenshotsCarousel />
-          </Row>
+     
         </Container>
       </section>
 
