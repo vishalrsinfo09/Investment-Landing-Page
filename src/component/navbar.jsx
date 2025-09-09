@@ -20,8 +20,8 @@ function MyNavbar() {
                     <img
                         src="/Icon.png"
                         alt="App Icon"
-                        className="me-2"
-                        style={{ height: "50px", width: "auto" }} // ✅ Fix size
+                        className="me-2 navbar-logo"
+                        style={{ height: "50px", width: "auto" }} 
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle
