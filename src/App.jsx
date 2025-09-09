@@ -18,7 +18,8 @@ import {
   Star,
   Award,
   Globe,
-  ArrowRight
+  ArrowRight,
+  Users2
 } from "lucide-react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import ScreenshotsCarousel from "./component/screenshot"
@@ -41,33 +42,33 @@ function App() {
       color: "success"
     },
     {
-      icon: <Zap className="text-primary" size={40} />,
-      title: "AI-Powered Insights",
-      description:
-        "Get personalized investment recommendations powered by machine learning algorithms.",
-      color: "warning"
-    },
-    {
       icon: <Shield className="text-primary" size={40} />,
       title: "Bank-Level Security",
       description:
         "Your investments are protected with enterprise-grade security and encryption.",
       color: "info"
     },
-    {
-      icon: <Smartphone className="text-primary" size={40} />,
-      title: "Mobile Trading",
-      description:
-        "Trade on-the-go with our intuitive mobile interface designed for quick decisions.",
-      color: "danger"
-    },
-    {
-      icon: <Users className="text-primary" size={40} />,
-      title: "Expert Community",
-      description:
-        "Connect with professional traders and learn from experienced investors.",
-      color: "purple"
-    }
+    // {
+    //   icon: <Zap className="text-primary" size={40} />,
+    //   title: "AI-Powered Insights",
+    //   description:
+    //     "Get personalized investment recommendations powered by machine learning algorithms.",
+    //   color: "warning"
+    // },
+    // {
+    //   icon: <Smartphone className="text-primary" size={40} />,
+    //   title: "Mobile Trading",
+    //   description:
+    //     "Trade on-the-go with our intuitive mobile interface designed for quick decisions.",
+    //   color: "danger"
+    // },
+    // {
+    //   icon: <Users className="text-primary" size={40} />,
+    //   title: "Expert Community",
+    //   description:
+    //     "Connect with professional traders and learn from experienced investors.",
+    //   color: "purple"
+    // }
   ]
 
   return (
@@ -292,7 +293,7 @@ function App() {
               <h2 className="display-5 fw-bold mb-3 text-white hero-title">
                 See MNYMKT in Action
               </h2>
-              <p className="lead text-muted">
+              <p className="lead fw-bold text-muted">
                 Explore the intuitive interface designed for both beginners and
                 professionals
               </p>
@@ -364,7 +365,7 @@ function App() {
       <footer className="footer-section text-white py-5">
         <Container>
           <Row>
-            <Col lg={4} className="mb-4 mb-lg-0">
+            <Col lg={3} className="mb-4 mb-lg-0">
               <div className="d-flex align-items-center">
                 <TrendingUp
                   className="me-2 text-primary brand-icon"
@@ -377,45 +378,86 @@ function App() {
                 users worldwide.
               </p>
             </Col>
-            <Col lg={4} className="mb-4 mb-lg-0">
+
+            <Col lg={3} className="mb-4 mb-lg-0">
               <h6 className="fw-bold mb-3">Quick Links</h6>
               <div className="d-flex flex-column">
                 <a
                   href="#features"
-                  className="text-light opacity-75 text-decoration-none mb-2"
+                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
                 >
                   Features
                 </a>
                 <a
                   href="#about"
-                  className="text-light opacity-75 text-decoration-none mb-2"
+                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
                 >
                   About
                 </a>
                 <a
                   href="#screenshots"
-                  className="text-light opacity-75 text-decoration-none mb-2"
+                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
                 >
                   Screenshots
                 </a>
               </div>
             </Col>
-            <Col lg={4}>
+
+            <Col lg={3} className="mb-4 mb-lg-0">
+              <h6 className="fw-bold mb-3">Legal</h6>
+              <div className="d-flex flex-column">
+                <a
+                  href="/terms-and-conditions"
+                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                >
+                  Terms & Conditions
+                </a>
+                <a
+                  href="/privacy-policy"
+                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="/risk-disclosure"
+                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                >
+                  Risk Disclosure
+                </a>
+                <a
+                  href="/refund-policy"
+                  className="text-light opacity-75 text-decoration-none mb-2 footer-link"
+                >
+                  Refund Policy
+                </a>
+              </div>
+            </Col>
+
+            <Col lg={3}>
               <h6 className="fw-bold mb-3">Contact</h6>
               <p className="text-light opacity-75 mb-2">
                 support@MNYMKT.com
               </p>
+              <p className="text-light opacity-75 mb-2">+91-XXXXX-XXXXX</p>
               <p className="text-light opacity-75 mb-0">Available 24/7</p>
             </Col>
           </Row>
+
           <hr className="my-4 opacity-25" />
+
           <Row className="align-items-center">
-            <Col md={6}>
+            <Col md={8}>
               <small className="text-light opacity-50">
-                © 2025 MNYMKT. All rights reserved.
+                © 2025 MNYMKT. All rights reserved. |
+                <a href="/terms-and-conditions" className="text-light opacity-75 text-decoration-none ms-1 me-1">
+                  Terms & Conditions
+                </a> |
+                <a href="/privacy-policy" className="text-light opacity-75 text-decoration-none ms-1">
+                  Privacy Policy
+                </a>
               </small>
             </Col>
-            <Col md={6} className="text-md-end mt-3 mt-md-0">
+            <Col md={4} className="text-md-end mt-3 mt-md-0">
               <small className="text-light opacity-50">
                 Made with ❤️ for smart investors
               </small>
@@ -423,6 +465,7 @@ function App() {
           </Row>
         </Container>
       </footer>
+
     </div>
   )
 }
