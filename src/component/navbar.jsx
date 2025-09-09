@@ -18,7 +18,7 @@ function MyNavbar() {
                     className="fw-bold fs-3 text-dark brand-glow d-flex align-items-center"
                 >
                     <img
-                        src="Public/Icon.png"
+                        src="/Icon.png"
                         alt="App Icon"
                         width="200"
                         height="230"
