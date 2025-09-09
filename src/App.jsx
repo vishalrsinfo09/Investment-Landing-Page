@@ -92,14 +92,16 @@ function App() {
                 Invest Smarter with
                 <span className="text-gradient"> MNYMKT</span>
               </h1>
-              <p className="lead text-light mb-2 mb-md-3 hero-subtitle">
-                🚀 Your gateway to intelligent investing
-              </p>
-              <p className="fs-6 fs-md-5 text-light opacity-90 mb-3 mb-md-4">
-                Transform your financial future with our AI-powered investment
-                platform. Track portfolios, analyze markets, and make informed
-                decisions with professional-grade tools designed for everyone.
-              </p>
+              <div className='text-left'>
+                <p className="lead text-light mb-2 mb-md-3 hero-subtitle">
+                  🚀 Your gateway to intelligent investing
+                </p>
+                <p className="fs-6 fs-md-5 text-light opacity-90 mb-3 mb-md-4">
+                  Transform your financial future with our AI-powered investment
+                  platform. Track portfolios, analyze markets, and make informed
+                  decisions with professional-grade tools designed for everyone.
+                </p>
+              </div>
               <div className="d-flex flex-column flex-sm-row gap-2 gap-md-3 mb-3 mb-md-4">
                 <Button
                   variant="light"
@@ -178,7 +180,7 @@ function App() {
               </Badge>
 
               <h2 className="display-5 fw-bold mb-4 section-title">
-                Built for Modern Investors  
+                Built for Modern Investors
               </h2>
               <p className="fs-5 text-dark mb-4">
                 MNYMKT combines cutting-edge technology with intuitive design
@@ -244,7 +246,7 @@ function App() {
               <h2 className="display-6 display-md-5 fw-bold mb-2 mb-md-3 section-title">
                 Powerful Features for Smart Investing
               </h2>
-              <p className="lead text-muted mb-3 mb-md-4">
+              <p className="lead text-muted mb-3 mb-md-4 fw-bold">
                 Everything you need to take control of your financial future,
                 all in one app
               </p>
