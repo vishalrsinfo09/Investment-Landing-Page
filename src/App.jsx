@@ -302,9 +302,9 @@ function App() {
               </p>
             </Col>
           </Row>
-          
-            <ScreenshotsCarousel />
-     
+
+          <ScreenshotsCarousel />
+
         </Container>
       </section>
 
@@ -370,9 +370,15 @@ function App() {
           <Row className="g-4">
             <Col md={6} lg={3} className="mb-3 mb-lg-0">
               <div className="d-flex align-items-center">
-                <TrendingUp
-                  className="me-1 me-md-2 text-primary brand-icon"
-                  size={28}
+                <img
+                  src="/Logo.png"
+                  alt="App Icon"
+                  className="me-2 navbar-logo"
+                  style={{
+                    height: "35px",
+                    width: "auto",
+                    maxHeight: "50px"
+                  }}
                 />
                 <span className="fw-bold fs-5 fs-md-4">MNYMKT</span>
               </div>

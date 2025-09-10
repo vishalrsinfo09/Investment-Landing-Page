@@ -74,7 +74,7 @@ function MyNavbar() {
                                 variant="primary"
                                 className="btn-glow d-flex align-items-center justify-content-center fw-bold w-100 w-lg-auto"
                                 onClick={handleNavClick}
-                                size="sm"
+                                size="md"
                             >
                                 <Download size={14} className="me-1 me-md-2" />
                                 Download
